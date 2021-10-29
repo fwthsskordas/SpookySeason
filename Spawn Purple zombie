@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class spawn2 : MonoBehaviour
+{
+
+ public GameObject objToSpawn2;   
+    
+  
+  
+   
+  public   void ButtonClicked(){
+     SpawnIt();
+   }
+
+    void SpawnIt(){
+     var position = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
+     Instantiate(objToSpawn2, position, Quaternion.identity);
+      
+    }
+}
